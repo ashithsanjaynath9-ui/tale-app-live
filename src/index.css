@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #fbbf24;
+    color: #000000;
+  }
+}
+
+@layer components {
+  .gold-glow-radial {
+    background: radial-gradient(ellipse at center, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+  }
+
+  .luxury-border {
+    border: 1px solid rgba(251, 191, 36, 0.2);
+  }
+
+  .serif-italic {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+  }
+
+  .letter-spaced {
+    letter-spacing: 0.25em;
+  }
+}
+/* --- PURE LUXURY WHITE MODE (Rolls Royce/Bentley Style) --- */
+.light-mode {
+  background-color: #ffffff !important; /* Pure White */
+  color: #000000 !important;
+}
+
+/* Cards: Off-white with ultra-subtle border */
+.light-mode .bg-\[\#050505\],
+.light-mode .bg-\[\#0a0a0a\],
+.light-mode .bg-black {
+  background-color: #fafafa !important; /* Slightly off-white for depth */
+  border-color: #e5e5e5 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* Ultra-subtle shadow */
+}
+
+/* Text: Pure Black for maximum contrast */
+.light-mode .text-white { color: #000000 !important; }
+.light-mode .text-zinc-400, 
+.light-mode .text-zinc-500 { color: #525252 !important; }
+.light-mode .text-zinc-300 { color: #404040 !important; }
+
+/* Borders: Light gray, barely there */
+.light-mode .border-\[\#222\], 
+.light-mode .border-charcoal { 
+  border-color: #e5e5e5 !important; 
+}
+
+/* Inputs: Pure white with subtle border */
+.light-mode input, 
+.light-mode textarea, 
+.light-mode select {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #d4d4d4 !important;
+}
+
+/* Gold Accents: Rich, Deep Gold - Maximum Pop */
+.light-mode .text-\[\#d4af37\] {
+  color: #8B6914 !important; /* Deep luxury gold */
+}
+.light-mode .bg-\[\#d4af37\] {
+  background-color: #B8941F !important;
+}
+
+/* Charts: Crystal Clear Visibility */
+.light-mode .recharts-wrapper {
+  background-color: #ffffff !important;
+}
+.light-mode .recharts-cartesian-grid-horizontal line,
+.light-mode .recharts-cartesian-grid-vertical line {
+  stroke: #f0f0f0 !important; /* Almost invisible grid */
+}
+
+/* Sidebar: Keep it Black (Luxury Contrast) */
+.light-mode aside {
+  background-color: #000000 !important; /* Pure Black */
+  border-color: #1a1a1a !important;
+}
+.light-mode aside .text-white { color: #ffffff !important; }
+.light-mode aside .text-zinc-500 { color: #737373 !important; }
+.light-mode aside .bg-\[\#0a0a0a\] { background-color: #0a0a0a !important; }
+.light-mode aside .border-\[\#222\] { border-color: #1a1a1a !important; }
