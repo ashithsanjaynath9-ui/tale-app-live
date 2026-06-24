@@ -176,7 +176,7 @@ Structure EXACTLY like this:
 ### Join Us
 [1-2 sentences call-to-action in ${tone} style]
 
-End with: MATCH_SCORE: 85`;
+End with: MATCH_SCORE: [Generate a random number between 78 and 98 based on how well the narrative fits the company values]`;
 
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
